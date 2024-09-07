@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <title>Arturo's Portfolio</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- NAVIGATION FORM -->
+          <nav class="navbar fixed-top navbar-expand-lg">
+              <a class="navbar-brand" href="#">Portfolio</a>
+              <div class="collapse navbar-collapse" >
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="document.getElementById('portfolio').scrollIntoView();">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="document.getElementById('contact-form').scrollIntoView();">Contact</a>
+                  </li>
+                </ul>
+              </div>
+        </nav>
+        
+       
+       <!--HEADER IMAGE-->  
+        <div class="center-div a-header">
+            <img src="head.png" alt="Header" class="blur">
+            <div class="center-div" style="position: absolute">
+                <img src="thumb.png" class="rounded-circle" style="width: 150px;"alt="Avatar"> 
+            </div>
+    
+        </div>  
+        <!-- CARDS -->
+        <div class="jumbotron text-center"><h1 class='display-4'>ARTURO ANDRES</h1></div>
+        <div class="row center-div card-container" id="portfolio">
+          <div class="col-4 center-div">
+            <div class="card box-shadow" id="button">
+            <img class="card-img-top" src="Rumplestiltskin.png" alt="Rumplestiltskin frame. The King engages the girl to be her queen.">
+              <div class="card-body">
+                <h5 class="card-title">The Tale of Rumplestiltskin</h5>
+                <p class="card-text">Early European tales of deception, royalty, feudalism and betrayal.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#card1">Read More</button>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-4 center-div">
+            <div class="card box-shadow" id="button2">
+            <img class="card-img-top" src="CoinCrisis_TitleScreen.png" alt="Title Screen for the proposed game Coin Crisis. It depicts a  nondescript teenager studiously perusing through notebooks and journals, with school-related mess sprawled around.">
+              <div class="card-body">
+                <h5 class="card-title">Coin Crisis</h5>
+                <p class="card-text">The key to a good relationship is to have a enough money for yourself and the self that wants.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#card2">Read More</button>
+              </div>
+            </div>
+          </div>
+            <div class="col-4 center-div">
+                <div class="card box-shadow" id="button3">
+                <img class="card-img-top" src="treasurebox.png" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Serindipity</h5>
+                    <p class="card-text">A treasure trove of memories kept safely in the box.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#card3">Read More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        
+        
+         <!-- FORM -->
+        
+        <div class='container'>
+        <form id="contact-form">
+            <p style="font-size:  2em;">Contact Form</p>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+              </div>
+             <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        
+ <!-- MODAL  -->
+<div class="modal fade" id="card1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">The Tale of Rumplestiltskin</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       In partial fulfillment of the requirements of Algocom, I used a children's tale to teach about algorithms. Lovingly crafted, this animation paints a tale inspired by children's books and animations.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <div class="modal fade" id="card2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Coin Crisis</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       In partial fulfillment of the requirements of Software Engineering 2, Coin Crisis is a video game proposal from Team Limbus. The game aims to educate people about healthy financial decisions. I took part in creating visuals and user interfaces.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <div class="modal fade" id="card3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Serindipity</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        A  roblox game that simulates what it feels like to lose something precious but want for something more. Given as a gift to someone.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+              
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        <script src="java.js"></script>
+        
+    </body>
+</html>
